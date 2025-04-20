@@ -3,5 +3,11 @@
         "__node_handle": "cpp",
         "random": "cpp"
     },
-    "cmake.sourceDirectory": "/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli"
+    "cmake.sourceDirectory": "/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    }
 }

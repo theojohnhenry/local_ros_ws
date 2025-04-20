@@ -1,5 +1,16 @@
 #include "rclcpp/rclcpp.hpp"
 #include "tutorial_interfaces/srv/add_three_ints.hpp"
+#include "tutorial_interfaces/srv/SpeedControl.hpp"
+#include "tutorial_interfaces/srv/StopMotor.hpp"
+
+// auto frame = motor_controller.recieve_ack();
+// auto result = motor_controller.decode_ack(frame);
+// auto result = motor_controller.decode_ack(frame);
+
+// response->angle = result.angle;
+// response->speed = result.speed;
+// response->torque_current = result.torque_current;
+// response->temperature = result.temperature;
 
 #include <memory>
 
