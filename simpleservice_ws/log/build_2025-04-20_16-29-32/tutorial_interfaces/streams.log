@@ -1,0 +1,30 @@
+[0.022s] Invoking command in '/workspaces/local_ros_ws/simpleservice_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/local_ros_ws/simpleservice_ws/build/tutorial_interfaces -- -j8 -l8
+[0.066s] [33mCMake Warning (dev) at CMakeLists.txt:16:
+[0.067s]   Syntax Warning in cmake code at column 25
+[0.069s] 
+[0.073s]   Argument not separated from preceding token by whitespace.
+[0.074s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.076s] [0m
+[0.076s] [33mCMake Warning (dev) at CMakeLists.txt:17:
+[0.077s]   Syntax Warning in cmake code at column 25
+[0.079s] 
+[0.081s]   Argument not separated from preceding token by whitespace.
+[0.085s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.087s] [0m
+[0.088s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.111s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.217s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.222s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.279s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.345s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.349s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):
+[0.349s]   rosidl_generate_interfaces() the passed file ',' doesn't exist relative to
+[0.351s]   the CMAKE_CURRENT_SOURCE_DIR
+[0.351s]   '/workspaces/local_ros_ws/simpleservice_ws/src/tutorial_interfaces'
+[0.353s] Call Stack (most recent call first):
+[0.354s]   CMakeLists.txt:15 (rosidl_generate_interfaces)
+[0.356s] 
+[0.359s] [0m
+[0.360s] -- Configuring incomplete, errors occurred!
+[0.362s] gmake: *** [Makefile:815: cmake_check_build_system] Error 1
+[0.363s] Invoked command in '/workspaces/local_ros_ws/simpleservice_ws/build/tutorial_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/local_ros_ws/simpleservice_ws/build/tutorial_interfaces -- -j8 -l8

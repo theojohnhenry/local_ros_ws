@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tutorial_interfaces/srv/SpeedControl.srv
+// generated code does not contain a copyright notice
+
+
+module tutorial_interfaces {
+  module srv {
+    struct SpeedControl_Request {
+      @verbatim (language="comment", text=
+        "Desired speed, 0.01 dps/LSB")
+      int32 speed_control;
+    };
+    struct SpeedControl_Response {
+      @verbatim (language="comment", text=
+        "Motor temperature")
+      uint8 temperature;
+
+      @verbatim (language="comment", text=
+        "Torque current (signed)")
+      int16 torque_current;
+
+      @verbatim (language="comment", text=
+        "Motor output shaft speed (signed, 0.01 dps/LSB)")
+      int16 speed;
+
+      @verbatim (language="comment", text=
+        "Motor output shaft angle (signed, 0.01 deg/LSB)")
+      int16 angle;
+    };
+  };
+};

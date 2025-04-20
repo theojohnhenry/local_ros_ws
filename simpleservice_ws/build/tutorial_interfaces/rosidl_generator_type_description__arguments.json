@@ -1,0 +1,13 @@
+{
+  "package_name": "tutorial_interfaces",
+  "output_dir": "/workspaces/local_ros_ws/simpleservice_ws/build/tutorial_interfaces/rosidl_generator_type_description/tutorial_interfaces",
+  "idl_tuples": [
+    "/workspaces/local_ros_ws/simpleservice_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:srv/AddThreeInts.idl",
+    "/workspaces/local_ros_ws/simpleservice_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:srv/SpeedControl.idl",
+    "/workspaces/local_ros_ws/simpleservice_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:srv/StopMotor.idl"
+  ],
+  "include_paths": [
+    "service_msgs:/opt/ros/jazzy/share/service_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces"
+  ]
+}

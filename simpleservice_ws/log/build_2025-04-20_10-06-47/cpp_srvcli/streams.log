@@ -1,0 +1,20 @@
+[0.023s] Invoking command in '/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli -DCMAKE_INSTALL_PREFIX=/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli
+[0.050s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.355s] -- Found rclcpp: 28.1.8 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.403s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.419s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.438s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.461s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.628s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.642s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.774s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.799s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.827s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.986s] -- Found example_interfaces: 0.12.0 (/opt/ros/jazzy/share/example_interfaces/cmake)
+[1.054s] -- Found tutorial_interfaces: 0.0.0 (/workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake)
+[1.090s] [31mCMake Error at CMakeLists.txt:22 (rosidl_generate_interfaces):
+[1.090s]   Unknown CMake command "rosidl_generate_interfaces".
+[1.091s] 
+[1.092s] [0m
+[1.092s] -- Configuring incomplete, errors occurred!
+[1.098s] Invoked command in '/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli -DCMAKE_INSTALL_PREFIX=/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli

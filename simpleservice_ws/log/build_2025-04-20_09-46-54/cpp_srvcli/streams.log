@@ -1,0 +1,21 @@
+[0.018s] Invoking command in '/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli -DCMAKE_INSTALL_PREFIX=/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli
+[0.038s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.236s] [31mCMake Error at CMakeLists.txt:6 (find_package):
+[0.237s]   find_package called with invalid argument "REQURED"
+[0.238s] 
+[0.239s] [0m
+[0.241s] -- Found example_interfaces: 0.12.0 (/opt/ros/jazzy/share/example_interfaces/cmake)
+[0.271s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.284s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.299s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.318s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.423s] -- Found tutorial_interfaces: 0.0.0 (/workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake)
+[0.454s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[0.455s]   ament_target_dependencies() the passed package name 'rclcpp' was not found
+[0.455s]   before
+[0.456s] Call Stack (most recent call first):
+[0.456s]   CMakeLists.txt:11 (ament_target_dependencies)
+[0.457s] 
+[0.459s] [0m
+[0.460s] -- Configuring incomplete, errors occurred!
+[0.461s] Invoked command in '/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli -DCMAKE_INSTALL_PREFIX=/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli

@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tutorial_interfaces/srv/StopMotor.srv
+// generated code does not contain a copyright notice
+
+
+module tutorial_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request (no fields needed, just call to stop)")
+    struct StopMotor_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    @verbatim (language="comment", text=
+      "Response (empty)")
+    struct StopMotor_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

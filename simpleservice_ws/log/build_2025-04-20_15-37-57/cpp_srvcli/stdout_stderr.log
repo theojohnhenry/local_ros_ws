@@ -1,0 +1,40 @@
+-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found rclcpp: 28.1.8 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found example_interfaces: 0.12.0 (/opt/ros/jazzy/share/example_interfaces/cmake)
+-- Found tutorial_interfaces: 0.0.0 (/workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake)
+-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+-- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+-- Configuring done (1.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: /workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli
+[ 25%] [32mBuilding CXX object CMakeFiles/server.dir/src/add_two_ints_server.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/client.dir/src/add_two_ints_client.cpp.o[0m
+[01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/add_two_ints_server.cpp:6:21:[m[K [01;31m[Kerror: [m[Ktwo or more data types in declaration of ‘[01m[Ktype name[m[K’
+    6 | using my_srv_file = [01;31m[Ktutorial_interfaces[m[K::srv::AddThreeInts
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/add_two_ints_server.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/add_two_ints_server.cpp:24:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_srv_file[m[K’ was not declared in this scope
+   24 |     rclcpp::Service<[01;31m[Kmy_srv_file[m[K>::SharedPtr service = //En shared pointer som heter service pekar på en rclcpp service, följer addTwoInts-mallen.
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/add_two_ints_server.cpp:24:32:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   24 |     rclcpp::Service<my_srv_file[01;31m[K>[m[K::SharedPtr service = //En shared pointer som heter service pekar på en rclcpp service, följer addTwoInts-mallen.
+      |                                [01;31m[K^[m[K
+[01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/add_two_ints_server.cpp:24:45:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kservice[m[K’
+   24 |     rclcpp::Service<my_srv_file>::SharedPtr [01;31m[Kservice[m[K = //En shared pointer som heter service pekar på en rclcpp service, följer addTwoInts-mallen.
+      |                                             [01;31m[K^~~~~~~[m[K
+[01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/add_two_ints_client.cpp:9:21:[m[K [01;31m[Kerror: [m[Ktwo or more data types in declaration of ‘[01m[Ktype name[m[K’
+    9 | using my_srv_file = [01;31m[Ktutorial_interfaces[m[K::srv::AddThreeInts
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/server.dir/build.make:76: CMakeFiles/server.dir/src/add_two_ints_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/server.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/client.dir/build.make:76: CMakeFiles/client.dir/src/add_two_ints_client.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/client.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "files.associations": {
+        "*.ipp": "cpp"
+    },
+    "cmake.sourceDirectory": "/Users/mort/Documents/control-exo/Code/ros/simpleservice_ws/src/cpp_srvcli"
+}

@@ -1,0 +1,6 @@
+srv/AddThreeInts.idl
+srv/AddThreeInts.srv
+srv/SpeedControl.idl
+srv/SpeedControl.srv
+srv/StopMotor.idl
+srv/StopMotor.srv

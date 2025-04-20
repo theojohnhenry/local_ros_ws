@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "tutorial_interfaces/srv/SpeedControl_Request",
+      "fields": [
+        {
+          "name": "speed_control",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "tutorial_interfaces/srv/SpeedControl_Request",
+      "hash_string": "RIHS01_6e3facc59333385025a43024bf00e3c8a6e1dc6d9f60b3db3c7b4a5c0864ec16"
+    }
+  ]
+}

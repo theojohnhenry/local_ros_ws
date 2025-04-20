@@ -1,0 +1,6 @@
+int32 speed_control  # Desired speed, 0.01 dps/LSB
+---
+uint8 temperature         # Motor temperature
+int16 torque_current      # Torque current (signed)
+int16 speed               # Motor output shaft speed (signed, 0.01 dps/LSB)
+int16 angle               # Motor output shaft angle (signed, 0.01 deg/LSB)

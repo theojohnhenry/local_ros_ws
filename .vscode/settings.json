@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "__node_handle": "cpp",
+        "random": "cpp"
+    },
+    "cmake.sourceDirectory": "/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli"
+}
