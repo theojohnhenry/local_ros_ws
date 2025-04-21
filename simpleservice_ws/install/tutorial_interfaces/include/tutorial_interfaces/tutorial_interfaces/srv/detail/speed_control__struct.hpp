@@ -155,10 +155,10 @@ struct SpeedControl_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->temperature = 0;
-      this->torque_current = 0;
-      this->speed = 0;
-      this->angle = 0;
+      this->temperature = 0.0;
+      this->torque_current = 0.0;
+      this->speed = 0.0;
+      this->angle = 0.0;
     }
   }
 
@@ -168,48 +168,48 @@ struct SpeedControl_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->temperature = 0;
-      this->torque_current = 0;
-      this->speed = 0;
-      this->angle = 0;
+      this->temperature = 0.0;
+      this->torque_current = 0.0;
+      this->speed = 0.0;
+      this->angle = 0.0;
     }
   }
 
   // field types and members
   using _temperature_type =
-    uint8_t;
+    double;
   _temperature_type temperature;
   using _torque_current_type =
-    int16_t;
+    double;
   _torque_current_type torque_current;
   using _speed_type =
-    int16_t;
+    double;
   _speed_type speed;
   using _angle_type =
-    int16_t;
+    double;
   _angle_type angle;
 
   // setters for named parameter idiom
   Type & set__temperature(
-    const uint8_t & _arg)
+    const double & _arg)
   {
     this->temperature = _arg;
     return *this;
   }
   Type & set__torque_current(
-    const int16_t & _arg)
+    const double & _arg)
   {
     this->torque_current = _arg;
     return *this;
   }
   Type & set__speed(
-    const int16_t & _arg)
+    const double & _arg)
   {
     this->speed = _arg;
     return *this;
   }
   Type & set__angle(
-    const int16_t & _arg)
+    const double & _arg)
   {
     this->angle = _arg;
     return *this;

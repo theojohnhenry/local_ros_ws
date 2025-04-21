@@ -1,6 +1,6 @@
 #include "rclcpp/rclcpp.hpp"
-#include "tutorial_interfaces/srv/SpeedControl.srv"
-#include "tutorial_interfaces/srv/StopMotor.srv"
+#include "tutorial_interfaces/srv/speed_control.hpp"
+#include "tutorial_interfaces/srv/stop_motor.hpp"
 #include "MotorController.hpp"
 
 // auto frame = motor_controller.recieve_ack();
@@ -32,7 +32,7 @@ void handle_speed_control(
     const std::shared_ptr<speed_srv::Request> request,
     std::shared_ptr<speed_srv::Response> response)
     {
-        motor_controller.send_speed_command(request->speed);
+        motor_controller.send_speed_command(request->speed_control);
         auto frame = motor_controller.recieve_ack();
         auto result = motor_controller.decode_ack(frame);
        

@@ -1,6 +1,6 @@
 int32 speed_control  # Desired speed, 0.01 dps/LSB
 ---
-double temperature         # Motor temperature
-double torque_current      # Torque current (signed)
-double speed               # Motor output shaft speed (signed, 0.01 dps/LSB)
-double angle               # Motor output shaft angle (signed, 0.01 deg/LSB)
+float64 temperature         # Motor temperature;
+float64 torque_current      # Torque current (signed);
+float64 speed               # Motor output shaft speed (signed, 0.01 dps/LSB);
+float64 angle               # Motor output shaft angle (signed, 0.01 deg/LSB);

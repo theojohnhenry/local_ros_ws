@@ -162,7 +162,7 @@
           {
             "name": "temperature",
             "type": {
-              "type_id": 3,
+              "type_id": 11,
               "capacity": 0,
               "string_capacity": 0,
               "nested_type_name": ""
@@ -172,7 +172,7 @@
           {
             "name": "torque_current",
             "type": {
-              "type_id": 4,
+              "type_id": 11,
               "capacity": 0,
               "string_capacity": 0,
               "nested_type_name": ""
@@ -182,7 +182,7 @@
           {
             "name": "speed",
             "type": {
-              "type_id": 4,
+              "type_id": 11,
               "capacity": 0,
               "string_capacity": 0,
               "nested_type_name": ""
@@ -192,7 +192,7 @@
           {
             "name": "angle",
             "type": {
-              "type_id": 4,
+              "type_id": 11,
               "capacity": 0,
               "string_capacity": 0,
               "nested_type_name": ""
@@ -206,7 +206,7 @@
   "type_hashes": [
     {
       "type_name": "tutorial_interfaces/srv/SpeedControl",
-      "hash_string": "RIHS01_ee18a6e1405037160c01a2b1e564d42fea414f5a66473afbdd4c54f9b522ff52"
+      "hash_string": "RIHS01_31424798cb70a2e8fa0a96c33e4d1a395abca32286374490c4295e429e61a3eb"
     },
     {
       "type_name": "builtin_interfaces/msg/Time",
@@ -218,7 +218,7 @@
     },
     {
       "type_name": "tutorial_interfaces/srv/SpeedControl_Event",
-      "hash_string": "RIHS01_169fc1a3fde765f2a7d017f6c2d4383b720398184424110e3d6b2790b0d5c99e"
+      "hash_string": "RIHS01_82e4e6d90c85de5a5de8d5e38bf04269ca212ce585c82964f9693f87a8a37779"
     },
     {
       "type_name": "tutorial_interfaces/srv/SpeedControl_Request",
@@ -226,7 +226,7 @@
     },
     {
       "type_name": "tutorial_interfaces/srv/SpeedControl_Response",
-      "hash_string": "RIHS01_6c06ee3d8bb66ff24cb3f19a43e9c48c31529cdeee99c9bf38ff6b289b410619"
+      "hash_string": "RIHS01_d47a4670acdf18bf1e5248663ee7c7d47981f15bbefadf5cf9f332ad2cf295b1"
     }
   ]
 }

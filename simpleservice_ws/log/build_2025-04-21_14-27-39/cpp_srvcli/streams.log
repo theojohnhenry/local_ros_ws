@@ -1,0 +1,11 @@
+[0.024s] Invoking command in '/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces:/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli -- -j8 -l8
+[0.094s] [ 75%] [32mBuilding CXX object CMakeFiles/server.dir/src/motor_node.cpp.o[0m
+[0.094s] [ 75%] Built target client
+[0.599s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/motor_node.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Ktutorial_interfaces/srv/motor_stop.hpp: No such file or directory
+[0.599s]     3 | #include [01;31m[K"tutorial_interfaces/srv/motor_stop.hpp"[m[K
+[0.600s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.600s] compilation terminated.
+[0.600s] gmake[2]: *** [CMakeFiles/server.dir/build.make:76: CMakeFiles/server.dir/src/motor_node.cpp.o] Error 1
+[0.601s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/server.dir/all] Error 2
+[0.601s] gmake: *** [Makefile:146: all] Error 2
+[0.601s] Invoked command in '/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli' returned '2': CMAKE_PREFIX_PATH=/workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces:/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli -- -j8 -l8

@@ -1,0 +1,47 @@
+[0.013s] Invoking command in '/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces:/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli -- -j8 -l8
+[0.046s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.256s] -- Found rclcpp: 28.1.8 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.300s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.311s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.322s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.336s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.389s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.391s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.448s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.493s] -- Found tutorial_interfaces: 0.0.0 (/workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake)
+[0.514s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.525s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.592s] -- Configuring done (0.6s)
+[0.637s] -- Generating done (0.0s)
+[0.660s] -- Build files have been written to: /workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli
+[0.923s] [ 20%] [32mBuilding CXX object CMakeFiles/client.dir/src/control_node.cpp.o[0m
+[0.926s] [ 40%] [32mBuilding CXX object CMakeFiles/server.dir/src/MotorController.cpp.o[0m
+[0.930s] [ 60%] [32mBuilding CXX object CMakeFiles/server.dir/src/motor_node.cpp.o[0m
+[3.200s] [ 80%] [32m[1mLinking CXX executable server[0m
+[3.320s] [100%] [32m[1mLinking CXX executable client[0m
+[3.333s] [100%] Built target server
+[3.461s] [100%] Built target client
+[3.469s] Invoked command in '/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=/workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces:/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli -- -j8 -l8
+[3.471s] Invoking command in '/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces:/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli
+[3.479s] -- Install configuration: ""
+[3.480s] -- Installing: /workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/lib/cpp_srvcli/server
+[3.487s] -- Set non-toolchain portion of runtime path of "/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/lib/cpp_srvcli/server" to ""
+[3.488s] -- Installing: /workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/lib/cpp_srvcli/client
+[3.495s] -- Set non-toolchain portion of runtime path of "/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/lib/cpp_srvcli/client" to ""
+[3.495s] -- Up-to-date: /workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/share/ament_index/resource_index/package_run_dependencies/cpp_srvcli
+[3.496s] -- Up-to-date: /workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/share/ament_index/resource_index/parent_prefix_path/cpp_srvcli
+[3.496s] -- Up-to-date: /workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/share/cpp_srvcli/environment/ament_prefix_path.sh
+[3.496s] -- Up-to-date: /workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/share/cpp_srvcli/environment/ament_prefix_path.dsv
+[3.497s] -- Up-to-date: /workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/share/cpp_srvcli/environment/path.sh
+[3.497s] -- Up-to-date: /workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/share/cpp_srvcli/environment/path.dsv
+[3.498s] -- Up-to-date: /workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.bash
+[3.498s] -- Up-to-date: /workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.sh
+[3.498s] -- Up-to-date: /workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.zsh
+[3.499s] -- Up-to-date: /workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.dsv
+[3.499s] -- Installing: /workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/share/cpp_srvcli/package.dsv
+[3.500s] -- Up-to-date: /workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/share/ament_index/resource_index/packages/cpp_srvcli
+[3.500s] -- Up-to-date: /workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/share/cpp_srvcli/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.500s] -- Up-to-date: /workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/share/cpp_srvcli/cmake/cpp_srvcliConfig.cmake
+[3.501s] -- Up-to-date: /workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/share/cpp_srvcli/cmake/cpp_srvcliConfig-version.cmake
+[3.502s] -- Up-to-date: /workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli/share/cpp_srvcli/package.xml
+[3.503s] Invoked command in '/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=/workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces:/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli

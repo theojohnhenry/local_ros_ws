@@ -83,22 +83,32 @@ CMakeFiles/server.dir/src/motor_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/motor_node.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/motor_node.cpp -o CMakeFiles/server.dir/src/motor_node.cpp.s
 
+CMakeFiles/server.dir/src/MotorController.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/MotorController.cpp.o: /workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/MotorController.cpp
+CMakeFiles/server.dir/src/MotorController.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/src/MotorController.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/MotorController.cpp.o -MF CMakeFiles/server.dir/src/MotorController.cpp.o.d -o CMakeFiles/server.dir/src/MotorController.cpp.o -c /workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/MotorController.cpp
+
+CMakeFiles/server.dir/src/MotorController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/src/MotorController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/MotorController.cpp > CMakeFiles/server.dir/src/MotorController.cpp.i
+
+CMakeFiles/server.dir/src/MotorController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/MotorController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/MotorController.cpp -o CMakeFiles/server.dir/src/MotorController.cpp.s
+
 # Object files for target server
 server_OBJECTS = \
-"CMakeFiles/server.dir/src/motor_node.cpp.o"
+"CMakeFiles/server.dir/src/motor_node.cpp.o" \
+"CMakeFiles/server.dir/src/MotorController.cpp.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
 
 server: CMakeFiles/server.dir/src/motor_node.cpp.o
+server: CMakeFiles/server.dir/src/MotorController.cpp.o
 server: CMakeFiles/server.dir/build.make
 server: /opt/ros/jazzy/lib/librclcpp.so
-server: /opt/ros/jazzy/lib/libexample_interfaces__rosidl_typesupport_fastrtps_c.so
-server: /opt/ros/jazzy/lib/libexample_interfaces__rosidl_typesupport_introspection_c.so
-server: /opt/ros/jazzy/lib/libexample_interfaces__rosidl_typesupport_fastrtps_cpp.so
-server: /opt/ros/jazzy/lib/libexample_interfaces__rosidl_typesupport_introspection_cpp.so
-server: /opt/ros/jazzy/lib/libexample_interfaces__rosidl_typesupport_cpp.so
-server: /opt/ros/jazzy/lib/libexample_interfaces__rosidl_generator_py.so
 server: /workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so
 server: /workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_c.so
 server: /workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so
@@ -143,22 +153,6 @@ server: /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_c.so
 server: /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_c.so
 server: /opt/ros/jazzy/lib/libtracetools.so
 server: /opt/ros/jazzy/lib/librcl_logging_interface.so
-server: /opt/ros/jazzy/lib/libexample_interfaces__rosidl_typesupport_c.so
-server: /opt/ros/jazzy/lib/libexample_interfaces__rosidl_generator_c.so
-server: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
-server: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
-server: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
-server: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
-server: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_cpp.so
-server: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
-server: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
-server: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_c.so
-server: /opt/ros/jazzy/lib/libaction_msgs__rosidl_generator_c.so
-server: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
-server: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
-server: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
-server: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
-server: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_generator_c.so
 server: /workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_c.so
 server: /workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_c.so
 server: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so
@@ -189,7 +183,7 @@ server: /opt/ros/jazzy/lib/librcpputils.so
 server: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 server: /opt/ros/jazzy/lib/librcutils.so
 server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

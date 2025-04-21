@@ -1,0 +1,19 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/server.dir/src/motor_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/client.dir/src/control_node.cpp.o[0m
+[01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/motor_node.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Ktutorial_interfaces/srv/SpeedControl.srv: No such file or directory
+    2 | #include [01;31m[K"tutorial_interfaces/srv/SpeedControl.srv"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/server.dir/build.make:76: CMakeFiles/server.dir/src/motor_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/server.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K send_speed_command[m[K(const std::shared_ptr<rclcpp::Node>&, const rclcpp::Client<tutorial_interfaces::srv::SpeedControl>::SharedPtr&, int)[m[K’:
+[01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:34:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<tutorial_interfaces::srv::SpeedControl_Request_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type = struct tutorial_interfaces::srv::SpeedControl_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct tutorial_interfaces::srv::SpeedControl_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kspeed[m[K’
+   34 |   request->[01;31m[Kspeed[m[K = speed_control; // Adjust field name if needed
+      |            [01;31m[K^~~~~[m[K
+[01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:34:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed_control[m[K’ was not declared in this scope
+   34 |   request->speed = [01;31m[Kspeed_control[m[K; // Adjust field name if needed
+      |                    [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/client.dir/build.make:76: CMakeFiles/client.dir/src/control_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/client.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

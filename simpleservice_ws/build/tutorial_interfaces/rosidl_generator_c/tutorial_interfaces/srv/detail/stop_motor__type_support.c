@@ -6,8 +6,8 @@
 
 #include "tutorial_interfaces/srv/detail/stop_motor__type_support.h"
 #include "tutorial_interfaces/srv/detail/stop_motor__struct.h"
-#include "tutorial_interfaces/srv/detail/stop_motor__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "tutorial_interfaces/srv/detail/stop_motor__functions.h"
 
 #ifdef __cplusplus
 extern "C"

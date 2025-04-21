@@ -147,6 +147,8 @@ class SpeedControl_Request(metaclass=Metaclass_SpeedControl_Request):
 # already imported above
 # import builtins
 
+import math  # noqa: E402, I100
+
 # already imported above
 # import rosidl_parser.definition
 
@@ -204,19 +206,19 @@ class SpeedControl_Response(metaclass=Metaclass_SpeedControl_Response):
     ]
 
     _fields_and_field_types = {
-        'temperature': 'uint8',
-        'torque_current': 'int16',
-        'speed': 'int16',
-        'angle': 'int16',
+        'temperature': 'double',
+        'torque_current': 'double',
+        'speed': 'double',
+        'angle': 'double',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
     # related to the data type of each of the components the message.
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int16'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int16'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int16'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -228,10 +230,10 @@ class SpeedControl_Response(metaclass=Metaclass_SpeedControl_Response):
             assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
                 'Invalid arguments passed to constructor: %s' % \
                 ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.temperature = kwargs.get('temperature', int())
-        self.torque_current = kwargs.get('torque_current', int())
-        self.speed = kwargs.get('speed', int())
-        self.angle = kwargs.get('angle', int())
+        self.temperature = kwargs.get('temperature', float())
+        self.torque_current = kwargs.get('torque_current', float())
+        self.speed = kwargs.get('speed', float())
+        self.angle = kwargs.get('angle', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -287,10 +289,10 @@ class SpeedControl_Response(metaclass=Metaclass_SpeedControl_Response):
     def temperature(self, value):
         if self._check_fields:
             assert \
-                isinstance(value, int), \
-                "The 'temperature' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'temperature' field must be an unsigned integer in [0, 255]"
+                isinstance(value, float), \
+                "The 'temperature' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'temperature' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._temperature = value
 
     @builtins.property
@@ -302,10 +304,10 @@ class SpeedControl_Response(metaclass=Metaclass_SpeedControl_Response):
     def torque_current(self, value):
         if self._check_fields:
             assert \
-                isinstance(value, int), \
-                "The 'torque_current' field must be of type 'int'"
-            assert value >= -32768 and value < 32768, \
-                "The 'torque_current' field must be an integer in [-32768, 32767]"
+                isinstance(value, float), \
+                "The 'torque_current' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'torque_current' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._torque_current = value
 
     @builtins.property
@@ -317,10 +319,10 @@ class SpeedControl_Response(metaclass=Metaclass_SpeedControl_Response):
     def speed(self, value):
         if self._check_fields:
             assert \
-                isinstance(value, int), \
-                "The 'speed' field must be of type 'int'"
-            assert value >= -32768 and value < 32768, \
-                "The 'speed' field must be an integer in [-32768, 32767]"
+                isinstance(value, float), \
+                "The 'speed' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'speed' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._speed = value
 
     @builtins.property
@@ -332,10 +334,10 @@ class SpeedControl_Response(metaclass=Metaclass_SpeedControl_Response):
     def angle(self, value):
         if self._check_fields:
             assert \
-                isinstance(value, int), \
-                "The 'angle' field must be of type 'int'"
-            assert value >= -32768 and value < 32768, \
-                "The 'angle' field must be an integer in [-32768, 32767]"
+                isinstance(value, float), \
+                "The 'angle' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'angle' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._angle = value
 
 

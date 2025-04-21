@@ -127,7 +127,7 @@ void tutorial_interfaces__srv__SpeedControl_Response__rosidl_typesupport_introsp
 static rosidl_typesupport_introspection_c__MessageMember tutorial_interfaces__srv__SpeedControl_Response__rosidl_typesupport_introspection_c__SpeedControl_Response_message_member_array[4] = {
   {
     "temperature",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is key
@@ -145,7 +145,7 @@ static rosidl_typesupport_introspection_c__MessageMember tutorial_interfaces__sr
   },
   {
     "torque_current",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT16,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is key
@@ -163,7 +163,7 @@ static rosidl_typesupport_introspection_c__MessageMember tutorial_interfaces__sr
   },
   {
     "speed",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT16,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is key
@@ -181,7 +181,7 @@ static rosidl_typesupport_introspection_c__MessageMember tutorial_interfaces__sr
   },
   {
     "angle",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT16,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is key

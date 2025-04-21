@@ -167,7 +167,7 @@ void SpeedControl_Response_fini_function(void * message_memory)
 static const ::rosidl_typesupport_introspection_cpp::MessageMember SpeedControl_Response_message_member_array[4] = {
   {
     "temperature",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is key
@@ -185,7 +185,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember SpeedControl_
   },
   {
     "torque_current",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT16,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is key
@@ -203,7 +203,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember SpeedControl_
   },
   {
     "speed",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT16,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is key
@@ -221,7 +221,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember SpeedControl_
   },
   {
     "angle",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT16,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is key

@@ -1,0 +1,19 @@
+[0.013s] Invoking command in '/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces:/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli -- -j8 -l8
+[0.091s] [ 25%] [32mBuilding CXX object CMakeFiles/client.dir/src/control_node.cpp.o[0m
+[0.328s] [ 50%] [32mBuilding CXX object CMakeFiles/server.dir/src/motor_node.cpp.o[0m
+[2.730s] [ 75%] [32m[1mLinking CXX executable client[0m
+[2.770s] [100%] [32m[1mLinking CXX executable server[0m
+[2.886s] /usr/bin/ld: CMakeFiles/server.dir/src/motor_node.cpp.o: in function `handle_speed_control(std::shared_ptr<tutorial_interfaces::srv::SpeedControl_Request_<std::allocator<void> > >, std::shared_ptr<tutorial_interfaces::srv::SpeedControl_Response_<std::allocator<void> > >)':
+[2.886s] motor_node.cpp:(.text+0x44): undefined reference to `MotorController::send_speed_command(int)'
+[2.887s] /usr/bin/ld: motor_node.cpp:(.text+0x50): undefined reference to `MotorController::recieve_ack()'
+[2.888s] /usr/bin/ld: motor_node.cpp:(.text+0x68): undefined reference to `MotorController::decode_ack(can_frame const&)'
+[2.889s] /usr/bin/ld: CMakeFiles/server.dir/src/motor_node.cpp.o: in function `__static_initialization_and_destruction_0()':
+[2.889s] motor_node.cpp:(.text+0x660): undefined reference to `MotorController::MotorController()'
+[2.889s] /usr/bin/ld: motor_node.cpp:(.text+0x674): undefined reference to `MotorController::~MotorController()'
+[2.890s] /usr/bin/ld: motor_node.cpp:(.text+0x678): undefined reference to `MotorController::~MotorController()'
+[2.901s] [100%] Built target client
+[2.910s] collect2: error: ld returned 1 exit status
+[2.911s] gmake[2]: *** [CMakeFiles/server.dir/build.make:193: server] Error 1
+[2.912s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/server.dir/all] Error 2
+[2.913s] gmake: *** [Makefile:146: all] Error 2
+[2.913s] Invoked command in '/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli' returned '2': CMAKE_PREFIX_PATH=/workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces:/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli -- -j8 -l8

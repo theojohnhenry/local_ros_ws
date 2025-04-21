@@ -1,0 +1,18 @@
+[0.020s] Invoking command in '/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces:/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli -- -j8 -l8
+[0.115s] [ 50%] Built target client
+[0.118s] [ 75%] [32mBuilding CXX object CMakeFiles/server.dir/src/motor_node.cpp.o[0m
+[1.516s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/motor_node.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K handle_speed_control[m[K(std::shared_ptr<tutorial_interfaces::srv::SpeedControl_Request_<std::allocator<void> > >, std::shared_ptr<tutorial_interfaces::srv::SpeedControl_Response_<std::allocator<void> > >)[m[K’:
+[1.518s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/motor_node.cpp:35:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<tutorial_interfaces::srv::SpeedControl_Request_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type = struct tutorial_interfaces::srv::SpeedControl_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct tutorial_interfaces::srv::SpeedControl_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kspeed[m[K’
+[1.519s]    35 |         motor_controller.send_speed_command(request->[01;31m[Kspeed[m[K);
+[1.519s]       |                                                      [01;31m[K^~~~~[m[K
+[1.519s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/motor_node.cpp:36:50:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kstruct can_frame[m[K’
+[1.519s]    36 |         auto frame = [01;31m[Kmotor_controller.recieve_ack()[m[K;
+[1.520s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[1.520s] In file included from [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/motor_node.cpp:4[m[K:
+[1.520s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/MotorController.hpp:16:12:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kstruct can_frame[m[K’
+[1.520s]    16 |     struct [01;36m[Kcan_frame[m[K recieve_ack();
+[1.521s]       |            [01;36m[K^~~~~~~~~[m[K
+[1.936s] gmake[2]: *** [CMakeFiles/server.dir/build.make:76: CMakeFiles/server.dir/src/motor_node.cpp.o] Error 1
+[1.936s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/server.dir/all] Error 2
+[1.936s] gmake: *** [Makefile:146: all] Error 2
+[1.937s] Invoked command in '/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli' returned '2': CMAKE_PREFIX_PATH=/workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces:/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli -- -j8 -l8

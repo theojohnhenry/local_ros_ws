@@ -150,8 +150,8 @@ bool tutorial_interfaces__srv__speed_control__response__convert_from_py(PyObject
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->temperature = (uint8_t)PyLong_AsUnsignedLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->temperature = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // torque_current
@@ -159,8 +159,8 @@ bool tutorial_interfaces__srv__speed_control__response__convert_from_py(PyObject
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->torque_current = (int16_t)PyLong_AsLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->torque_current = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // speed
@@ -168,8 +168,8 @@ bool tutorial_interfaces__srv__speed_control__response__convert_from_py(PyObject
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->speed = (int16_t)PyLong_AsLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->speed = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // angle
@@ -177,8 +177,8 @@ bool tutorial_interfaces__srv__speed_control__response__convert_from_py(PyObject
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->angle = (int16_t)PyLong_AsLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->angle = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -205,7 +205,7 @@ PyObject * tutorial_interfaces__srv__speed_control__response__convert_to_py(void
   tutorial_interfaces__srv__SpeedControl_Response * ros_message = (tutorial_interfaces__srv__SpeedControl_Response *)raw_ros_message;
   {  // temperature
     PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->temperature);
+    field = PyFloat_FromDouble(ros_message->temperature);
     {
       int rc = PyObject_SetAttrString(_pymessage, "temperature", field);
       Py_DECREF(field);
@@ -216,7 +216,7 @@ PyObject * tutorial_interfaces__srv__speed_control__response__convert_to_py(void
   }
   {  // torque_current
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->torque_current);
+    field = PyFloat_FromDouble(ros_message->torque_current);
     {
       int rc = PyObject_SetAttrString(_pymessage, "torque_current", field);
       Py_DECREF(field);
@@ -227,7 +227,7 @@ PyObject * tutorial_interfaces__srv__speed_control__response__convert_to_py(void
   }
   {  // speed
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->speed);
+    field = PyFloat_FromDouble(ros_message->speed);
     {
       int rc = PyObject_SetAttrString(_pymessage, "speed", field);
       Py_DECREF(field);
@@ -238,7 +238,7 @@ PyObject * tutorial_interfaces__srv__speed_control__response__convert_to_py(void
   }
   {  // angle
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->angle);
+    field = PyFloat_FromDouble(ros_message->angle);
     {
       int rc = PyObject_SetAttrString(_pymessage, "angle", field);
       Py_DECREF(field);

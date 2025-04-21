@@ -223,6 +223,30 @@ client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
 .PHONY : client/fast
 
+src/MotorController.o: src/MotorController.cpp.o
+.PHONY : src/MotorController.o
+
+# target to build an object file
+src/MotorController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/MotorController.cpp.o
+.PHONY : src/MotorController.cpp.o
+
+src/MotorController.i: src/MotorController.cpp.i
+.PHONY : src/MotorController.i
+
+# target to preprocess a source file
+src/MotorController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/MotorController.cpp.i
+.PHONY : src/MotorController.cpp.i
+
+src/MotorController.s: src/MotorController.cpp.s
+.PHONY : src/MotorController.s
+
+# target to generate assembly for a file
+src/MotorController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/MotorController.cpp.s
+.PHONY : src/MotorController.cpp.s
+
 src/control_node.o: src/control_node.cpp.o
 .PHONY : src/control_node.o
 
@@ -288,6 +312,9 @@ help:
 	@echo "... uninstall"
 	@echo "... client"
 	@echo "... server"
+	@echo "... src/MotorController.o"
+	@echo "... src/MotorController.i"
+	@echo "... src/MotorController.s"
 	@echo "... src/control_node.o"
 	@echo "... src/control_node.i"
 	@echo "... src/control_node.s"

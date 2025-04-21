@@ -4,16 +4,15 @@ project(cpp_srvcli)
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(example_interfaces REQUIRED)
 find_package(tutorial_interfaces REQUIRED)         # CHANGE
 find_package(rosidl_default_generators REQUIRED)
 
-add_executable(server src/motor_node.cpp)
-ament_target_dependencies(server rclcpp example_interfaces tutorial_interfaces)
+add_executable(server src/motor_node.cpp src/MotorController.cpp)
+ament_target_dependencies(server rclcpp tutorial_interfaces)
 
 
 add_executable(client src/control_node.cpp)
-ament_target_dependencies(client rclcpp example_interfaces tutorial_interfaces)
+ament_target_dependencies(client rclcpp tutorial_interfaces)
 
 install(TARGETS
     server

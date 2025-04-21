@@ -42,14 +42,14 @@ typedef struct tutorial_interfaces__srv__SpeedControl_Request__Sequence
 /// Struct defined in srv/SpeedControl in the package tutorial_interfaces.
 typedef struct tutorial_interfaces__srv__SpeedControl_Response
 {
-  /// Motor temperature
-  uint8_t temperature;
-  /// Torque current (signed)
-  int16_t torque_current;
-  /// Motor output shaft speed (signed, 0.01 dps/LSB)
-  int16_t speed;
-  /// Motor output shaft angle (signed, 0.01 deg/LSB)
-  int16_t angle;
+  /// Motor temperature;
+  double temperature;
+  /// Torque current (signed);
+  double torque_current;
+  /// Motor output shaft speed (signed, 0.01 dps/LSB);
+  double speed;
+  /// Motor output shaft angle (signed, 0.01 deg/LSB);
+  double angle;
 } tutorial_interfaces__srv__SpeedControl_Response;
 
 // Struct for a sequence of tutorial_interfaces__srv__SpeedControl_Response.

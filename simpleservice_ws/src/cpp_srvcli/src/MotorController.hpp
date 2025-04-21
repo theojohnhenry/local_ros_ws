@@ -1,4 +1,7 @@
 #pragma once
+#include <linux/can.h>
+#include <linux/can/raw.h>
+
 
 struct SpeedControlResult {
     float angle;

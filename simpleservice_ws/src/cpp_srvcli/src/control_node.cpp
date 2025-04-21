@@ -31,7 +31,7 @@ void send_speed_command(
   int speed)
 {
   auto request = std::make_shared<speed_srv::Request>();
-  request->speed = speed_control; // Adjust field name if needed
+  request->speed_control = speed; // Adjust field name if needed
 
   auto result = client->async_send_request(request);
   if (rclcpp::spin_until_future_complete(node, result) ==

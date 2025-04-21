@@ -12,20 +12,20 @@ module tutorial_interfaces {
     };
     struct SpeedControl_Response {
       @verbatim (language="comment", text=
-        "Motor temperature")
-      uint8 temperature;
+        "Motor temperature;")
+      double temperature;
 
       @verbatim (language="comment", text=
-        "Torque current (signed)")
-      int16 torque_current;
+        "Torque current (signed);")
+      double torque_current;
 
       @verbatim (language="comment", text=
-        "Motor output shaft speed (signed, 0.01 dps/LSB)")
-      int16 speed;
+        "Motor output shaft speed (signed, 0.01 dps/LSB);")
+      double speed;
 
       @verbatim (language="comment", text=
-        "Motor output shaft angle (signed, 0.01 deg/LSB)")
-      int16 angle;
+        "Motor output shaft angle (signed, 0.01 deg/LSB);")
+      double angle;
     };
   };
 };

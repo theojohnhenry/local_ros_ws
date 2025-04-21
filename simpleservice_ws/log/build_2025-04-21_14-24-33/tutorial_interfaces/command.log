@@ -1,0 +1,2 @@
+Invoking command in '/workspaces/local_ros_ws/simpleservice_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/local_ros_ws/simpleservice_ws/build/tutorial_interfaces -- -j8 -l8
+Invoked command in '/workspaces/local_ros_ws/simpleservice_ws/build/tutorial_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/local_ros_ws/simpleservice_ws/build/tutorial_interfaces -- -j8 -l8
