@@ -6,3 +6,5 @@ tutorial_interfaces.egg-info/dependency_links.txt
 tutorial_interfaces.egg-info/top_level.txt
 tutorial_interfaces/srv/__init__.py
 tutorial_interfaces/srv/_add_three_ints.py
+tutorial_interfaces/srv/_speed_control.py
+tutorial_interfaces/srv/_stop_motor.py

@@ -1,0 +1,102 @@
+[0.015s] Invoking command in '/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces:/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli -- -j8 -l8
+[0.104s] [ 25%] [32mBuilding CXX object CMakeFiles/client.dir/src/control_node.cpp.o[0m
+[0.106s] [ 50%] [32mBuilding CXX object CMakeFiles/server.dir/src/motor_node.cpp.o[0m
+[0.771s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/motor_node.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Ktutorial_interfaces/srv/SpeedControl.srv: No such file or directory
+[0.771s]     2 | #include [01;31m[K"tutorial_interfaces/srv/SpeedControl.srv"[m[K
+[0.772s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.772s] compilation terminated.
+[0.772s] gmake[2]: *** [CMakeFiles/server.dir/build.make:76: CMakeFiles/server.dir/src/motor_node.cpp.o] Error 1
+[0.772s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/server.dir/all] Error 2
+[0.773s] gmake[1]: *** Waiting for unfinished jobs....
+[0.885s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:28:25:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ was not declared in this scope
+[0.889s]    28 |   const std::shared_ptr<[01;31m[Krclcpp[m[K::Node>& node,
+[0.892s]       |                         [01;31m[K^~~~~~[m[K
+[0.894s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:28:37:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[0.894s]    28 |   const std::shared_ptr<rclcpp::Node[01;31m[K>[m[K& node,
+[0.895s]       |                                     [01;31m[K^[m[K
+[0.895s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:28:25:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ was not declared in this scope
+[0.895s]    28 |   const std::shared_ptr<[01;31m[Krclcpp[m[K::Node>& node,
+[0.895s]       |                         [01;31m[K^~~~~~[m[K
+[0.896s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:28:37:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[0.896s]    28 |   const std::shared_ptr<rclcpp::Node[01;31m[K>[m[K& node,
+[0.896s]       |                                     [01;31m[K^[m[K
+[0.897s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:28:25:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ was not declared in this scope
+[0.897s]    28 |   const std::shared_ptr<[01;31m[Krclcpp[m[K::Node>& node,
+[0.897s]       |                         [01;31m[K^~~~~~[m[K
+[0.899s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:28:37:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[0.899s]    28 |   const std::shared_ptr<rclcpp::Node[01;31m[K>[m[K& node,
+[0.900s]       |                                     [01;31m[K^[m[K
+[0.900s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:28:9:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[0.900s]    28 |   const [01;31m[Kstd[m[K::shared_ptr<rclcpp::Node>& node,
+[0.900s]       |         [01;31m[K^~~[m[K
+[0.901s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:28:25:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ was not declared in this scope
+[0.901s]    28 |   const std::shared_ptr<[01;31m[Krclcpp[m[K::Node>& node,
+[0.901s]       |                         [01;31m[K^~~~~~[m[K
+[0.901s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:27:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Ksend_speed_command[m[K’ declared void
+[0.906s]    27 | void [01;31m[Ksend_speed_command[m[K(
+[0.908s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[0.910s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:28:3:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+[0.911s]    28 |   [01;31m[Kconst[m[K std::shared_ptr<rclcpp::Node>& node,
+[0.911s]       |   [01;31m[K^~~~~[m[K
+[0.911s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:29:3:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+[0.911s]    29 |   [01;31m[Kconst[m[K rclcpp::Client<speed_srv>::SharedPtr& client,
+[0.912s]       |   [01;31m[K^~~~~[m[K
+[0.912s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:30:3:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+[0.912s]    30 |   [01;31m[Kint[m[K speed)
+[0.912s]       |   [01;31m[K^~~[m[K
+[0.913s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[0.913s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:49:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[0.913s]    49 |   [01;31m[Krclcpp[m[K::init(argc, argv);
+[0.914s]       |   [01;31m[K^~~~~~[m[K
+[0.914s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:51:19:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ was not declared in this scope
+[0.914s]    51 |   std::shared_ptr<[01;31m[Krclcpp[m[K::Node> node = rclcpp::Node::make_shared("control_node");
+[0.914s]       |                   [01;31m[K^~~~~~[m[K
+[0.915s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:51:31:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[0.915s]    51 |   std::shared_ptr<rclcpp::Node[01;31m[K>[m[K node = rclcpp::Node::make_shared("control_node");
+[0.915s]       |                               [01;31m[K^[m[K
+[0.916s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:51:40:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ is not a class, namespace, or enumeration
+[0.916s]    51 |   std::shared_ptr<rclcpp::Node> node = [01;31m[Krclcpp[m[K::Node::make_shared("control_node");
+[0.917s]       |                                        [01;31m[K^~~~~~[m[K
+[0.917s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:52:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ is not a class, namespace, or enumeration
+[0.917s]    52 |   [01;31m[Krclcpp[m[K::Client<speed_srv>::SharedPtr client =
+[0.917s]       |   [01;31m[K^~~~~~[m[K
+[0.918s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:52:27:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[0.918s]    52 |   rclcpp::Client<speed_srv[01;31m[K>[m[K::SharedPtr client =
+[0.918s]       |                           [01;31m[K^[m[K
+[0.920s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:52:30:[m[K [01;31m[Kerror: [m[K‘[01m[K::SharedPtr[m[K’ has not been declared
+[0.920s]    52 |   rclcpp::Client<speed_srv>::[01;31m[KSharedPtr[m[K client =
+[0.921s]       |                              [01;31m[K^~~~~~~~~[m[K
+[0.921s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:55:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient[m[K’ was not declared in this scope
+[0.921s]    55 |   while (![01;31m[Kclient[m[K->wait_for_service(1s)) {
+[0.921s]       |           [01;31m[K^~~~~~[m[K
+[0.922s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:56:10:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ is not a class, namespace, or enumeration
+[0.922s]    56 |     if (![01;31m[Krclcpp[m[K::ok()) {
+[0.922s]       |          [01;31m[K^~~~~~[m[K
+[0.923s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:57:20:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ is not a class, namespace, or enumeration
+[0.923s]    57 |       RCLCPP_ERROR([01;31m[Krclcpp[m[K::get_logger("rclcpp"), "Interrupted while waiting for the service. Exiting.");
+[0.923s]       |                    [01;31m[K^~~~~~[m[K
+[0.923s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:57:7:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_ERROR[m[K’ was not declared in this scope
+[0.924s]    57 |       [01;31m[KRCLCPP_ERROR[m[K(rclcpp::get_logger("rclcpp"), "Interrupted while waiting for the service. Exiting.");
+[0.924s]       |       [01;31m[K^~~~~~~~~~~~[m[K
+[0.924s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:60:17:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ is not a class, namespace, or enumeration
+[0.924s]    60 |     RCLCPP_INFO([01;31m[Krclcpp[m[K::get_logger("rclcpp"), "service not available, waiting again..."); //kolla på can stop i denna situation
+[0.925s]       |                 [01;31m[K^~~~~~[m[K
+[0.925s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:60:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO[m[K’ was not declared in this scope
+[0.925s]    60 |     [01;31m[KRCLCPP_INFO[m[K(rclcpp::get_logger("rclcpp"), "service not available, waiting again..."); //kolla på can stop i denna situation
+[0.929s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[0.929s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:64:10:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ is not a class, namespace, or enumeration
+[0.930s]    64 |   while ([01;31m[Krclcpp[m[K::ok()) {
+[0.930s]       |          [01;31m[K^~~~~~[m[K
+[0.930s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:76:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient[m[K’ was not declared in this scope
+[0.930s]    76 |     send_speed_command(node, [01;31m[Kclient[m[K, speed);
+[0.931s]       |                              [01;31m[K^~~~~~[m[K
+[0.931s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:76:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksend_speed_command[m[K’ was not declared in this scope
+[0.931s]    76 |     [01;31m[Ksend_speed_command[m[K(node, client, speed);
+[0.931s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[0.932s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:79:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ is not a class, namespace, or enumeration
+[0.932s]    79 |   [01;31m[Krclcpp[m[K::shutdown();
+[0.932s]       |   [01;31m[K^~~~~~[m[K
+[0.951s] gmake[2]: *** [CMakeFiles/client.dir/build.make:76: CMakeFiles/client.dir/src/control_node.cpp.o] Error 1
+[0.951s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/client.dir/all] Error 2
+[0.951s] gmake: *** [Makefile:146: all] Error 2
+[0.953s] Invoked command in '/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli' returned '2': CMAKE_PREFIX_PATH=/workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces:/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli -- -j8 -l8

@@ -1,0 +1,59 @@
+[0.012s] Invoking command in '/workspaces/local_ros_ws/simpleservice_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/local_ros_ws/simpleservice_ws/build/tutorial_interfaces -- -j8 -l8
+[0.044s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.061s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.113s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.117s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.156s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.187s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.244s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[0.245s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[0.245s]   tutorial_interfaces --arguments-file
+[0.246s]   /workspaces/local_ros_ws/simpleservice_ws/build/tutorial_interfaces/rosidl_adapter__arguments__tutorial_interfaces.json
+[0.247s]   --output-dir
+[0.247s]   /workspaces/local_ros_ws/simpleservice_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces
+[0.250s]   --output-file
+[0.250s]   /workspaces/local_ros_ws/simpleservice_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces.idls)
+[0.250s]   returned error code 1:
+[0.251s] 
+[0.251s]   Error processing 'double temperature' of
+[0.252s]   'tutorial_interfaces/SpeedControl_Response': ''double' is an invalid
+[0.252s]   message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$''
+[0.253s] 
+[0.255s]   Traceback (most recent call last):
+[0.255s] 
+[0.255s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[0.256s]     File "<frozen runpy>", line 88, in _run_code
+[0.256s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.257s]       sys.exit(main())
+[0.257s]                ^^^^^^
+[0.258s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[0.258s]       abs_idl_file = convert_to_idl(
+[0.259s]                      ^^^^^^^^^^^^^^^
+[0.259s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 24, in convert_to_idl
+[0.259s]       return convert_srv_to_idl(
+[0.260s]              ^^^^^^^^^^^^^^^^^^^
+[0.260s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/srv/__init__.py", line 28, in convert_srv_to_idl
+[0.260s]       srv = parse_service_string(package_name, input_file.stem, content)
+[0.261s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.261s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 864, in parse_service_string
+[0.262s]       response_message = parse_message_string(
+[0.262s]                          ^^^^^^^^^^^^^^^^^^^^^
+[0.262s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 521, in parse_message_string
+[0.263s]       Type(type_string, context_package_name=pkg_name),
+[0.263s]       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.263s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 278, in __init__
+[0.264s]       super(Type, self).__init__(
+[0.264s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 206, in __init__
+[0.264s]       raise InvalidResourceName(
+[0.265s] 
+[0.265s]   rosidl_adapter.parser.InvalidResourceName: 'double' is an invalid message
+[0.265s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[0.266s] 
+[0.267s] Call Stack (most recent call first):
+[0.267s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[0.268s]   CMakeLists.txt:15 (rosidl_generate_interfaces)
+[0.268s] 
+[0.269s] [0m
+[0.269s] -- Configuring incomplete, errors occurred!
+[0.271s] gmake: *** [Makefile:1355: cmake_check_build_system] Error 1
+[0.271s] Invoked command in '/workspaces/local_ros_ws/simpleservice_ws/build/tutorial_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/local_ros_ws/simpleservice_ws/build/tutorial_interfaces -- -j8 -l8

@@ -1,0 +1,58 @@
+[0.017s] Invoking command in '/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces:/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli -- -j8 -l8
+[0.103s] [ 25%] [32mBuilding CXX object CMakeFiles/server.dir/src/motor_node.cpp.o[0m
+[0.180s] [ 50%] [32mBuilding CXX object CMakeFiles/client.dir/src/control_node.cpp.o[0m
+[1.141s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/motor_node.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Ktutorial_interfaces/srv/SpeedControl.srv: No such file or directory
+[1.142s]     2 | #include [01;31m[K"tutorial_interfaces/srv/SpeedControl.srv"[m[K
+[1.142s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.143s] compilation terminated.
+[1.143s] gmake[2]: *** [CMakeFiles/server.dir/build.make:76: CMakeFiles/server.dir/src/motor_node.cpp.o] Error 1
+[1.143s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/server.dir/all] Error 2
+[1.144s] gmake[1]: *** Waiting for unfinished jobs....
+[2.373s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K send_speed_command[m[K(const std::shared_ptr<rclcpp::Node>&, const rclcpp::Client<tutorial_interfaces::srv::SpeedControl>::SharedPtr&, int)[m[K’:
+[2.378s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:34:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<tutorial_interfaces::srv::SpeedControl_Request_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type = struct tutorial_interfaces::srv::SpeedControl_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct tutorial_interfaces::srv::SpeedControl_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kspeed[m[K’
+[2.378s]    34 |   request->[01;31m[Kspeed[m[K = speed; // Adjust field name if needed
+[2.378s]       |            [01;31m[K^~~~~[m[K
+[2.378s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:41:32:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 2 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.379s]    41 |     printf("Response: angle=[01;35m[K%.2f[m[K, speed=%.2f, torque_current=%.2f, temperature=%.2f\n",
+[2.379s]       |                             [01;35m[K~~~^[m[K
+[2.379s]       |                                [01;35m[K|[m[K
+[2.379s]       |                                [01;35m[Kdouble[m[K
+[2.380s]       |                             [32m[K%.2d[m[K
+[2.380s]    42 |       [32m[Kres->angle[m[K, res->speed, res->torque_current, res->temperature);
+[2.380s]       |       [32m[K~~~~~~~~~~[m[K                
+[2.380s]       |            [32m[K|[m[K
+[2.380s]       |            [32m[Kint[m[K
+[2.381s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:41:44:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.381s]    41 |     printf("Response: angle=%.2f, speed=[01;35m[K%.2f[m[K, torque_current=%.2f, temperature=%.2f\n",
+[2.381s]       |                                         [01;35m[K~~~^[m[K
+[2.381s]       |                                            [01;35m[K|[m[K
+[2.381s]       |                                            [01;35m[Kdouble[m[K
+[2.382s]       |                                         [32m[K%.2d[m[K
+[2.382s]    42 |       res->angle, [32m[Kres->speed[m[K, res->torque_current, res->temperature);
+[2.382s]       |                   [32m[K~~~~~~~~~~[m[K                
+[2.382s]       |                        [32m[K|[m[K
+[2.382s]       |                        [32m[Kint[m[K
+[2.382s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:41:65:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 4 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.383s]    41 |     printf("Response: angle=%.2f, speed=%.2f, torque_current=[01;35m[K%.2f[m[K, temperature=%.2f\n",
+[2.383s]       |                                                              [01;35m[K~~~^[m[K
+[2.383s]       |                                                                 [01;35m[K|[m[K
+[2.383s]       |                                                                 [01;35m[Kdouble[m[K
+[2.384s]       |                                                              [32m[K%.2d[m[K
+[2.384s]    42 |       res->angle, res->speed, [32m[Kres->torque_current[m[K, res->temperature);
+[2.384s]       |                               [32m[K~~~~~~~~~~~~~~~~~~~[m[K                
+[2.385s]       |                                    [32m[K|[m[K
+[2.385s]       |                                    [32m[Kint[m[K
+[2.385s] [01m[K/workspaces/local_ros_ws/simpleservice_ws/src/cpp_srvcli/src/control_node.cpp:41:83:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 5 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.385s]    41 |     printf("Response: angle=%.2f, speed=%.2f, torque_current=%.2f, temperature=[01;35m[K%.2f[m[K\n",
+[2.385s]       |                                                                                [01;35m[K~~~^[m[K
+[2.386s]       |                                                                                   [01;35m[K|[m[K
+[2.388s]       |                                                                                   [01;35m[Kdouble[m[K
+[2.390s]       |                                                                                [32m[K%.2d[m[K
+[2.392s]    42 |       res->angle, res->speed, res->torque_current, [32m[Kres->temperature[m[K);
+[2.392s]       |                                                    [32m[K~~~~~~~~~~~~~~~~[m[K                
+[2.392s]       |                                                         [32m[K|[m[K
+[2.392s]       |                                                         [32m[Kint[m[K
+[2.973s] gmake[2]: *** [CMakeFiles/client.dir/build.make:76: CMakeFiles/client.dir/src/control_node.cpp.o] Error 1
+[2.973s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/client.dir/all] Error 2
+[2.974s] gmake: *** [Makefile:146: all] Error 2
+[2.974s] Invoked command in '/workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli' returned '2': CMAKE_PREFIX_PATH=/workspaces/local_ros_ws/simpleservice_ws/install/tutorial_interfaces:/workspaces/local_ros_ws/simpleservice_ws/install/cpp_srvcli:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/local_ros_ws/simpleservice_ws/build/cpp_srvcli -- -j8 -l8
